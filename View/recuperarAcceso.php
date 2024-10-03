@@ -1,3 +1,7 @@
+<?php
+    include_once '../Controller/LoginController.php';
+?>
+
 <!doctype html>
 <html lang="en">
 
@@ -23,18 +27,25 @@
                                 <a href="home.php" class="text-nowrap logo-img text-center d-block py-3 w-100">
                                     <img src="images/logo-light.svg" alt="">
                                 </a>
-                                <form>
-                                    <div class="mb-3">
-                                        <label for="exampleInputEmail1" class="form-label">Username</label>
-                                        <input type="email" class="form-control" id="exampleInputEmail1"
-                                            aria-describedby="emailHelp">
+
+                                <p class="text-center">Recuperar el Acceso</p>
+
+                                <form action="" method="POST">
+                                <div class="mb-3">
+                                        <label class="form-label">Correo Electrónico</label>
+                                        <input type="email" class="form-control" id="txtCorreo" name="txtCorreo">
                                     </div>
-                                    <a href="home.php" class="btn btn-primary w-100 py-8 fs-4 mb-4">Sign In</a>
+                                    
+                                    <input type="submit" class="btn btn-primary w-100 py-8 fs-4 mb-4" value="Procesar"
+                                        id="btnRecuperarAcceso" name="btnRecuperarAcceso">
+                                    
                                     <div class="d-flex align-items-center justify-content-center">
-                                        <p class="fs-4 mb-0 fw-bold">New to SeoDash?</p>
+                                        <p class="fs-4 mb-0 fw-bold">Ya tienes una cuenta?</p>
                                         <a class="text-primary fw-bold ms-2" href="registrarUsuario.php">Crear una
                                             cuenta</a>
+                                        </div>
                                     </div>
+
                                 </form>
                             </div>
                         </div>
